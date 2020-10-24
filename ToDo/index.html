@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>To Do Checklist</title>
+    <link rel="stylesheet" type="text/css" href="css/todo.css">
+
+</head>
+<body>
+<header>
+    <img src="images/BYU-Idaho.png" alt="byui logo" id="logo">
+    <h1>BYU Idaho To Do App</h1>
+    <img src="images/hamMenu.svg" alt="menu" id="menu" onclick="clickMenu()">
+</header>
+<div id="sidemenu">
+    <br />
+    <a href="../index.html">Portfolio </a>
+</div>
+<div>
+    <h2>Todos</h2>
+</div>
+<div class="container">
+    <ul id="myUL">
+        <li class="active">Example ToDo</li>
+    </ul>
+
+</div>
+<input type="text" id="myInput" placeholder="ToDo Item">
+<button onclick="newElement()">+</button>
+<br /><br />
+<div id="count">
+    Tasks Left: 1
+</div>
+<script src="js/todo.js"></script>
+</body>
+</html>

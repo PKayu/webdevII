@@ -1,0 +1,9 @@
+It is helpful that I can 'use strict' in only specific functions
+
+Feature detection enables a program to wrap method or feature to ensure that it is valid before firing.
+
+It is not ideal to use browser sniffing
+
+Throw errors for for better code coverage.
+
+TDD is Test drivien development
