@@ -145,6 +145,10 @@ function renderOneHikeFull(hike) {
             <h3>How to get there</h3>
             <p>${hike.directions}</p>
         </div>
+        <div>
+            <textarea></textarea>
+            <button type="submit">Submit</button>
+        </div>
     
     `;
   return item;
