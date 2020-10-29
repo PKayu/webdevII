@@ -1,7 +1,7 @@
 const newComment = {
-    name: hikeName,
+    name: 'Hikename',
     date: new Date(),
-    content: comment
+    content: 'comment'
 };
 
 export default class Comment{
