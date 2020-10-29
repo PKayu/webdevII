@@ -116,7 +116,7 @@ function renderOneHikeLight(hike,comment) {
             <p>${hike.difficulty}</p>
         </div>
         <div>
-            <input type="text" />
+            <input type="text" id="comment"/>
             <button type="submit">Submit</button>
         </div>
 </div>`;
