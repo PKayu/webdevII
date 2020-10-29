@@ -1,3 +1,5 @@
+import Comments from './comments.js';
+
 // Example of using Classes and modules to organize the code needed to render our list of hikes. Not using MVC here.
 
 //create an array of hikes
@@ -37,7 +39,6 @@ const hikeList = [
 ];
 
 const imgBasePath = '//byui-cit.github.io/cit261/examples/';
-
 export default class Hikes {
   constructor(elementId) {
     this.parentElement = document.getElementById(elementId);
@@ -98,7 +99,7 @@ function renderHikeList(parent, hikes) {
     parent.appendChild(renderOneHikeLight(hike));
   });
 }
-function renderOneHikeLight(hike) {
+function renderOneHikeLight(hike,comment) {
   const item = document.createElement('li');
   item.classList.add('light');
   // setting this to make getting the details for a specific hike easier later.
@@ -113,6 +114,10 @@ function renderOneHikeLight(hike) {
         <div>
             <h3>Difficulty</h3>
             <p>${hike.difficulty}</p>
+        </div>
+        <div>
+            <textarea></textarea>
+            <button type="submit">Submit</button>
         </div>
 </div>`;
 
