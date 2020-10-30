@@ -99,7 +99,7 @@ function renderHikeList(parent, hikes) {
     parent.appendChild(renderOneHikeLight(hike));
   });
 }
-function renderOneHikeLight(hike,comment) {
+function renderOneHikeLight(hike) {
   const item = document.createElement('li');
   item.classList.add('light');
   // setting this to make getting the details for a specific hike easier later.
@@ -115,10 +115,14 @@ function renderOneHikeLight(hike,comment) {
             <h3>Difficulty</h3>
             <p>${hike.difficulty}</p>
         </div>
+        
         <div>
             <input type="text" id="comment"/>
             <button type="submit">Submit</button>
         </div>
+        <div>
+        
+</div>
 </div>`;
 
   return item;
