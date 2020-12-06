@@ -11,7 +11,7 @@
 <body>
 <header>
     <img src="images/BYU-Idaho.png" alt="byui logo" id="logo">
-    <h1>Daniel Worwood</h1>
+    <h1>Quote Journal</h1>
     <img src="images/hamMenu.svg" alt="menu" id="menu" onclick="clickMenu()">
 </header>
 <div id="sidemenu">
@@ -22,10 +22,18 @@
 <div class="flexer">
     <div>
         <h3 id="quote">Generated Quote</h3>
+        <h4 id="author">Author</h4>
+        <button onclick="showQuote()">Generate New Quote</button>
         <form>
-            <textarea></textarea><br>
-            <button type="submit">Save</button>
+            <p>What are your thoughts?</p>
+            <textarea id="journal"></textarea><br>
+            <button type="submit" onclick="store()">Save</button>
         </form>
+        <h3>Previous Journal Entries</h3>
+        <h4>Click to load</h4>
+        <ul id="listEntries">
+
+        </ul>
     </div>
 </div>
 <div>
@@ -33,12 +41,10 @@
 </div>
 
 <footer>
-    <?php
-    echo "The server time is " . date("h:i:sa");
-    ?>
     BYU-Idaho<br />
-    CS313
 </footer>
+
+<script src="scripts/quote.js"></script>
 </body>
 
 </html>
