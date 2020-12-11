@@ -31,10 +31,14 @@ function showQuote(url = "https://type.fit/api/quotes") {
 
         let quoteHtml = document.getElementById("quote");
         let authorHtml = document.getElementById("author");
+
         quoteHtml.innerText = quote.text;
-        authorHtml.innerText = "- " + quote.author;
 
-
+        if(quote.author === null){
+            authorHtml.innerText =  "- Anonymous";
+        }
+        else
+            authorHtml.innerText = "- " + quote.author;
     });
 }
 
